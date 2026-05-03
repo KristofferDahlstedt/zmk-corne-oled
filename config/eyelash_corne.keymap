@@ -15,7 +15,9 @@
 
 &msc_input_listener { input-processors = <&zip_scroll_scaler 2 1>; };
 
-&mt { tapping-term-ms = <600>; };
+// &mt { tapping-term-ms = <600>; };
+
+
 
 &msc {
     acceleration-exponent = <1>;      // 0
@@ -31,6 +33,18 @@
 
 / {
     behaviors {
+        hm: homerow_mods {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+
+            flavor = "balanced";
+            tapping-term-ms = <280>;
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <150>;
+
+            bindings = <&kp>, <&kp>;
+        };
+
         td0: td0 {
             compatible = "zmk,behavior-tap-dance";
             display-name = "Shift/Caps Lock Tap Dance";
