@@ -15,7 +15,7 @@
 
 &msc_input_listener { input-processors = <&zip_scroll_scaler 2 1>; };
 
-&mt { tapping-term-ms = <400>; };
+&mt { tapping-term-ms = <600>; };
 
 &msc {
     acceleration-exponent = <1>;      // 0
