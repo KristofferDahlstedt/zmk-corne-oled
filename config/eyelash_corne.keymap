@@ -143,10 +143,10 @@
 
         Symbols {
             bindings = <
-&trans  &kp LT         &kp LS(GT)    &kp LS(LPAR)  &kp LS(RPAR)  &kp BSLH                         &trans          &kp LS(FSLH)   &kp LBRC  &kp RBRC      &kp LBKT       &kp RBKT      &trans
-&trans  &kp PLUS       &kp MINUS     &kp LS(STAR)  &kp LS(FSLH)  &kp LS(EQUAL)            &trans  &trans  &trans  &kp LS(QMARK)  &kp DOT   &kp COMMA     &kp LS(COLON)  &kp LS(SEMI)  &kp LS(POUND)
-&trans  &kp LS(UNDER)  &kp LS(BSLH)  &kp DLLR      &kp LS(DQT)   &kp SQT        &trans            &trans          &kp LS(EXCL)   &kp PIPE  &kp LS(AMPS)  &kp LS(PRCNT)  &kp AT        &trans
-                                     &trans        &trans        &trans                                           &trans         &trans    &trans
+&trans  &kp NB_LESS_THAN   &kp NB_GT     &kp NB_LEFT_PARENTHESIS  &kp NB_RIGHT_PARENTHESIS  &kp NB_BACKSLASH                       &trans          &kp NB_QUESTION     &kp NB_LEFT_BRACE  &kp NB_RIGHT_BRACE  &kp NB_LEFT_BRACKET  &kp NB_RIGHT_BRACKET  &trans
+&trans  &kp NB_PLUS        &kp NB_MINUS  &kp NB_STAR              &kp NB_SLASH              &kp NB_EQUAL                   &trans  &trans  &trans  &kp NB_DOLLAR       &kp NB_PERIOD      &kp NB_COMMA        &kp NB_COLON         &kp NB_SEMICOLON      &kp NB_HASH
+&trans  &kp NB_UNDERSCORE  &kp NB_GRAVE  &kp NB_DOLLAR            &kp NB_DOUBLE_QUOTES      &kp NB_SINGLE_QUOTE  &trans            &trans          &kp NB_EXCLAMATION  &kp NB_PIPE        &kp NB_AMPS         &kp NB_PERCENT       &kp NB_AT             &trans
+                                         &trans                   &trans                    &trans                                                 &trans              &trans             &trans
             >;
         };
     };
