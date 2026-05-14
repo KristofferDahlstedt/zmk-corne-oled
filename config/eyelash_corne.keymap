@@ -80,11 +80,11 @@
             bindings = <
 &kp TAB         &kp Q           &kp W           &kp E             &kp R               &kp T                             &kp UP                &kp Y       &kp U                &kp I              &kp O           &kp P                     &kp NB_A_RING
 &kp LEFT_SHIFT  &hm LEFT_GUI A  &hm LEFT_ALT S  &hm LEFT_SHIFT D  &hm LEFT_CONTROL F  &kp G                   &kp LEFT  &kp ENTER  &kp RIGHT  &kp H       &hm RIGHT_CONTROL J  &hm RIGHT_SHIFT K  &hm LEFT_ALT L  &hm RIGHT_GUI NB_O_SLASH  &kp NB_AE
-&kp LCTRL       &kp Z           &kp X           &kp C             &kp V               &kp B      &kp SPACE              &kp DOWN              &kp N       &kp M                &kp NB_COMMA       &kp NB_PERIOD   &kp NB_MINUS              &tog 7
+&kp LCTRL       &kp Z           &kp X           &kp C             &kp V               &kp B      &kp SPACE              &kp DOWN              &kp N       &kp M                &kp NB_COMMA       &kp NB_PERIOD   &kp NB_MINUS              &to 8
                                                 &lt 4 ESC         &lt 6 SPACE         &kp ENTER                                               &kp DELETE  &lt 5 BACKSPACE      &kp TAB
             >;
 
-            sensor-bindings = <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
+            sensor-bindings = <&scroll_encoder>;
         };
 
         lower_layer {
@@ -165,6 +165,24 @@
             >;
 
             label = "GAMING";
+        };
+
+        GamingV2 {
+            bindings = <
+&kp ESC  &trans     &kp Q  &kp W    &kp E  &kp R                        &trans          &kp F1  &kp F2  &kp F3  &kp F4   &kp F5   &kp F6
+&trans   &kp LSHFT  &kp A  &kp S    &kp D  &kp F                &trans  &trans  &trans  &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
+&trans   &kp LCTRL  &kp Z  &kp X    &kp C  &kp V      &trans            &trans          &trans  &trans  &trans  &trans   &trans   &to 0
+                           &kp TAB  &mo 9  &kp SPACE                                    &trans  &trans  &trans
+            >;
+        };
+
+        GamingV2NUM {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &kp F1  &kp F2  &kp F3  &kp F4   &kp F5   &kp F6
+&trans  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5            &trans  &trans  &trans  &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
+&trans  &kp N6  &kp N7  &kp N8  &kp N9  &kp N0  &trans            &trans          &trans  &trans  &trans  &trans   &trans   &trans
+                        &trans  &trans  &trans                                    &trans  &trans  &trans
+            >;
         };
     };
 };
